@@ -1,0 +1,13 @@
+FROM justinbarrick/fluxcloud:v0.3.4
+
+ARG CCE_GIT_REPOSITORY=undefined
+ARG CCE_GIT_COMMIT=undefined
+ARG CCE_IMAGE_MAINTAINER=undefined
+ARG CCE_IMAGE_VENDOR=undefined
+ARG CCE_IMAGE_ORIGIN=undefined
+
+LABEL cce.image.vendor=${CCE_IMAGE_VENDOR}
+LABEL cce.image.maintainer=${CCE_IMAGE_MAINTAINER}
+LABEL cce.image.origin=${CCE_IMAGE_ORIGIN}
+LABEL cce.git.repository=${CCE_GIT_REPOSITORY}
+LABEL cce.git.commit=${CCE_GIT_COMMIT}
