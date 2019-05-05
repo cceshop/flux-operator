@@ -1,4 +1,4 @@
-FROM justinbarrick/fluxcloud:v0.3.4
+FROM justinbarrick/fluxcloud:v0.3.6
 
 ARG CCE_GIT_REPOSITORY=undefined
 ARG CCE_GIT_COMMIT=undefined

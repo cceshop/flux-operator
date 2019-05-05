@@ -7,7 +7,7 @@ replicaCount: 1
 
 image:
   repository: quay.io/cceshop/flux
-  tag: 1.12.0
+  tag: 1.12.1
   pullPolicy: IfNotPresent
   pullSecret:
 
@@ -78,7 +78,7 @@ helmOperator:
 
 fluxcloud:
     repository: quay.io/cceshop/fluxcloud
-    tag: v0.3.4
+    tag: v0.3.6
     pullPolicy: IfNotPresent
     slack:
       hookUrl: ""
@@ -205,10 +205,8 @@ memcached:
 ssh:                                                                                                                                                                                                                                      
     # Overrides for git over SSH. If you use your own git server, you
     # will likely need to provide a host key for it in this field.                                                                     
-    #known_hosts: |
-    #        10.2.241.21 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJ3ljwlMpEmwNTeFAEqV1XRy7to6YpfICFafPVcF
-    #        10.2.241.21 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCi5s2Y+Qn7oGkIZcIMpIzbzP7td7MPVREGv2zRHOqeYO8d09ETlP14DFIuvTEk8DQbrb3uIpCu
-    #        10.2.241.21 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILtKuui9eBkoAYXHXpdSubFLpjftjm75/H9XqSn+sh1x
+    known_hosts: |
+      # nothing
 
     #config: |
     #        Host lmc-bitbucket
