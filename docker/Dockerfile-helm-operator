@@ -1,4 +1,4 @@
-FROM quay.io/weaveworks/helm-operator:0.8.0
+FROM weaveworks/helm-operator:0.8.0
 
 ARG CCE_GIT_REPOSITORY=undefined
 ARG CCE_GIT_COMMIT=undefined
