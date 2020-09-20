@@ -1,4 +1,4 @@
-FROM weaveworks/helm-operator:0.8.0
+FROM fluxcd/helm-operator:1.2.0
 
 ARG CCE_GIT_REPOSITORY=undefined
 ARG CCE_GIT_COMMIT=undefined
