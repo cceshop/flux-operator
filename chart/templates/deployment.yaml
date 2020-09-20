@@ -174,7 +174,7 @@ spec:
           {{- if .Values.git.label }}
           - --git-label={{ .Values.git.label }}
           {{- end }}
-          - --registry-poll-interval={{ .Values.registry.pollInterval }}
+          - --automation-interval={{ .Values.registry.pollInterval }}
           - --registry-rps={{ .Values.registry.rps }}
           - --registry-burst={{ .Values.registry.burst }}
           - --registry-trace={{ .Values.registry.trace }}

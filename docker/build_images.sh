@@ -42,7 +42,7 @@ readonly GIT_REPO=`git remote get-url origin`
 readonly GIT_COMMIT=`git rev-parse --short HEAD | tr -d '\n'`
 readonly IMAGE_MAINTAINER="${1}"
 readonly IMAGE_VENDOR="${2}"
-readonly ENV="`echo ${3} | tr 'A-Z' 'a-z'`"
+readonly ENV="`echo ${3} | tr 'A-Z' 'a-z' || echo cceshop`"
 declare -a l_dockerregs=("quay.io")
 declare -a l_dockerfiles=(`ls "$(dirname ${0})/"| grep 'Dockerfile'`)
 

@@ -7,7 +7,7 @@ replicaCount: 1
 
 image:
   repository: quay.io/cceshop/flux
-  tag: 1.12.1
+  tag: 1.20.2
   pullPolicy: IfNotPresent
   pullSecret:
 
@@ -20,7 +20,7 @@ helmOperator:
   create: false
   createCRD: true
   repository: quay.io/cceshop/helm-operator
-  tag: 0.8.0
+  tag: 1.2.0
   pullPolicy: IfNotPresent
   pullSecret:
   # Limit the operator scope to a single namespace
@@ -78,14 +78,14 @@ helmOperator:
 
 fluxcloud:
     repository: quay.io/cceshop/fluxcloud
-    tag: v0.3.6
+    tag: v0.3.9
     pullPolicy: IfNotPresent
     slack:
       hookUrl: ""
       channel: ""
       username: "Flux Operator"
       emoji: ":ghost:"
-      gitUrl: ""
+      gitUrl: "test"
       exporterType: "slack"
       commitTemplate: |
         {{ .VCSLink }}/commits/{{ .Commit }}
@@ -183,7 +183,7 @@ registry:
 
 memcached:
   repository: quay.io/cceshop/memcached
-  tag: 1.4.25
+  tag: 1.6.7
   pullSecret:
   createClusterIP: true
   verbose: false
