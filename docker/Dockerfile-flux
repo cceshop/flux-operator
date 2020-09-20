@@ -1,4 +1,4 @@
-FROM weaveworks/flux:1.12.1
+FROM fluxcd/flux:1.20.2
 
 ARG CCE_GIT_REPOSITORY=undefined
 ARG CCE_GIT_COMMIT=undefined
